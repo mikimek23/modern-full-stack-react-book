@@ -1,0 +1,39 @@
+### sign up
+POST http://localhost:3001/api/v1/users/signup
+Content-Type: application/json
+
+{
+    "name":"Miki",
+    "email":"miki@gmail.com",
+    "password":"1234"
+}
+### log in
+POST http://localhost:3001/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email":"miki@gmail.com",
+    "password":"1234"
+}
+### 
+GET http://localhost:3001/api/v1/users/697cac8b402b48189d6caee0
+
+
+
+
+
+
+
+
+### post 
+POST http://localhost:3001/api/v1/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OTdjYWM4YjQwMmI0ODE4OWQ2Y2FlZTAiLCJpYXQiOjE3Njk3ODMxNjcsImV4cCI6MTc2OTg2OTU2N30.TWe6Y2N02DNzSkz6EXXzM7CsFlRfb0sj0QdogsP94N0
+
+{
+  "title": "post1",
+  "author": "miki mek",
+  "contents":"this is the test post",
+  "tags": ["test"]  
+}
+### post many
